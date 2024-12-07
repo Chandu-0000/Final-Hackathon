@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #8b4513;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.search-bar {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #5a3010;
+}
+
+main {
+    flex: 1; /* Push footer to the bottom of the viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center grid horizontally */
+    padding: 20px 0;
+}
+
+.product-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-grid {
+    width: 80%; /* Restrict grid width for a medium layout */
+    max-width: 1200px; /* Add a cap for wider screens */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for a clean look */
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.product-item img {
+    width: 100%;
+    max-height: 150px; /* Reduce image height */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    color: #8b4513;
+    font-size: 1.1rem; /* Reduce font size */
+    margin: 10px 0;
+}
+
+.product-item .description {
+    font-size: 0.9rem; /* Smaller description text */
+    color: #333;
+}
+
+.product-item .price {
+    font-weight: bold;
+    color: green;
+    margin: 5px 0;
+}
+
+.product-item .stock {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+footer {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative; /* Allows the footer to stay at the bottom */
+    bottom: 0;
+}

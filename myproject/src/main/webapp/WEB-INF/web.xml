@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>myproject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>project.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>ManageProductsServlett</servlet-name>
+    <servlet-class>artisan.ManageProductsServlett</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ManageProductsServlett</servlet-name>
+    <url-pattern>/manageProducts</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>SignupServlet</servlet-name>
+    <servlet-class>project.SignupServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SignupServlet</servlet-name>
+    <url-pattern>/SignupServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>AddProductServlet</servlet-name>
+    <servlet-class>artisan.AddProductServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddProductServlet</servlet-name>
+    <url-pattern>/addProduct</url-pattern>
+</servlet-mapping>
+<servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>artisan.ProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProfileServlet</servlet-name>
+        <url-pattern>/ProfileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CustomerListServlet</servlet-name>
+        <servlet-class>customer.CustomerListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerListServlet</servlet-name>
+        <url-pattern>/CustomerProfileServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>AdminOverviewServlet</servlet-name>
+    <servlet-class>admin.AdminOverviewServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AdminOverviewServlet</servlet-name>
+    <url-pattern>/AdminOverviewServlet</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+</web-app>

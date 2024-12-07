@@ -1,0 +1,113 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f9f9f9;
+background: url('../images/background.jpg') no-repeat center center;    background-size: cover; /* Ensures the background covers the entire screen */
+    background-position: center center; /* Keeps the image centered */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #8b4513;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Header shadow */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+/* Main Container Styling */
+main {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 40px 60px; /* Increased padding for a wider layout */
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Deep shadow effect for card-like appearance */
+    width: 100%;
+    max-width: 800px; /* Wider container */
+    text-align: center;
+    margin-top: 30px; /* Ensure space below header */
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    z-index: 1; /* Ensure the main content is on top of the background */
+}
+
+main:hover {
+    transform: translateY(-10px); /* Hover effect for card */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Login Buttons List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    background: linear-gradient(45deg, #ff6600, #ffcc00); /* Gradient button */
+    color: white;
+    padding: 18px 25px;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Button shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #ff9900;
+    transform: translateY(-5px); /* Button hover effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
+}
+
+ul li a i {
+    margin-right: 10px;
+    font-size: 1.2rem; /* Increase icon size */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 90%; /* Ensure it doesn't go too wide on smaller screens */
+        padding: 30px 40px; /* Adjust padding */
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+}
